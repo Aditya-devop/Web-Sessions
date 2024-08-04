@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="red">
+        I am a inside red class div
+    </div>
+
+    <div id="green">
+        I am inside green id div
+    </div>
+
+    <div data-x="a">
+        I am inside attribute selector div
+    </div>
+
+    <div>
+        I am just inside div.
+        <p>
+            I am a first para inside div.
+            <!--yaha twist h ye descendent para ke saath saath first paragraph child bhi h
+            isley pehle first para ki properities obey hongi and then jo property nahi likhi vo descent selector ki obey hongi-->
+        </p>
+        <p>
+            I am second para inside div.
+        </p>
+        <span>
+            <p>hi I am descendent 'first paragraph' child</p>
+            <p>hi I am descendent second paragraph child</p>
+        </span>
+    </div>
+
+
+    <div>
+        <a href="https://www.google.com">Go to google</a>
+        <br>
+        <a href="https://www.instagram2.com">Go to instagram</a>
+    </div>
+    <div>
+        <p>I am first</p>
+        <p>I am second</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Basics</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .check{
+            padding: 50px;
+            border-radius: 20px;
+            background-color: black;
+            color: whitesmoke;
+        }
+        label{
+            font-size: 20px;
+        }
+        .answer{
+            text-align: center;
+        }
+        button{
+            font-size: 20px;
+            border-radius: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="check">
+        
+        <h1>Which Color do you like?</h1>
+        <input type="checkbox" id="c1" name="p2" value="red">
+        <label for="c1">RED</label>
+        <br>
+        <input type="checkbox" id="c2" name="p2" value="blue">
+        <label for="c1">BLUE</label>
+        <br>
+        <input type="checkbox" id="c3" name="p2" value="green">
+        <label for="c1">GREEN</label>
+        <br>
+        <input type="checkbox" id="c4" name="p2" value="yellow">
+        <label for="c1">YELLOW</label>
+        <br>
+        <input type="checkbox" id="c5" name="p2" value="pink">
+        <label for="c1">PINK</label>
+        <br>
+        <br>
+        <div class="answer">
+            <button onclick="show()">Submit</button>
+            <h1 id="ans"></h1>
+        </div>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>

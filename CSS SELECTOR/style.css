@@ -1,0 +1,75 @@
+ /* Universal selctor*/
+ * {
+    margin: 0;
+    padding: 0;
+}
+
+/* element selector */
+div {
+    background-color: aqua;
+}
+
+/* class selector */
+.red {
+    background-color: red;
+}
+
+/* ID selector */
+#green {
+    background-color: green;
+}
+
+/* Descendent selector */
+div p {
+    background-color: black;
+    color: white;
+}
+
+
+/* child selector */
+/* RUles */
+/* div ka direct child hona chahiye and descendent selector ke baad aana chahiye tabhi kaam karega */
+/* if div ka child article h and then uska child para h and then ye property apply nahi hogi uske liye descendent selector use karna padega*/
+div>p {
+    color: green;
+    background-color: pink;
+}
+
+/* attribute selector */
+[data-x=a] {
+    background-color: hotpink;
+}
+
+/* pseudo selector*/
+a:visited {
+    color: yellow;
+}
+
+a:link {
+    color: red;
+}
+
+a:hover {
+    background-color: pink;
+}
+
+/* a:active works only if there is a:hover is defined first*/
+a:active {
+    background-color: black;
+}
+
+div p:first-child {
+    background-color: brown;
+}
+
+/* Note- a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective! */
+/* Note- a:active MUST come after a:hover in the CSS definition in order to be effective*/
+/* Note- Pseudo-class name are not case-sensitivity*/
+
+/* Pseudo-elements */
+span p::first-line {
+    font-variant:small-caps;   
+}
+span p::before{
+    content: "I am before";
+}
